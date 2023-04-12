@@ -1,0 +1,19 @@
+slice is handling for a feature of the application/project
+
+reducer is the function which controls the statte of the slice
+
+heroicon website
+
+we can mutate the the state in this, no need to always return new state (Immer library)
+
+add reducers in slice as property
+
+if we return anything from reducers it'll become the new state for that reducers
+
+automatic action generation (with the name of function inside reducers) with type and payload
+
+createAsyncThunk generates life cycle actions pending, fulfilled, rejected
+
+send parameters from component to asyncthunk function, thunkAPI
+
+https://github.com/john-smilga/redux-toolkit-tutorial/blob/main/final/README.md
