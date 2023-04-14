@@ -11,9 +11,11 @@ const categorySlice = createSlice({
   reducers: {
     addCategory: (state, action) => {
       state.categoryList.push(action.payload);
-      state.totalPlanned += action.payload.plannedAmount;
+      state.totalPlanned += Number(action.payload.plannedAmt);
     },
   },
 });
+
+export const { addCategory } = categorySlice.actions;
 
 export default categorySlice.reducer;
